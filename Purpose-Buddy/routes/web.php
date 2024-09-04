@@ -15,3 +15,4 @@ use App\Http\Controllers\DemoController;
 */
 
 Route::get('/', [DemoController::class , 'index'] );
+Route::get('/guzzle', [DemoController::class , 'guzzle'] );

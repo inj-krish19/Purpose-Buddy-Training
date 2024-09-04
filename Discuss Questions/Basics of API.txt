@@ -1,0 +1,26 @@
+Q:  Create simple PHP scripts with controller-like structures.
+Ans : So API that follows the principles of REST.
+REST is an architectural style for designing networked 
+applications. API 's full form is Application Programming Interface.
+Here we will now about REST API that is relying on stateless, 
+client-server communication, and the use of standard HTTP methods
+like GET , PUT , POST , DELETE , etc ...
+
+There are mainly two types of API :
+1 ) REST API
+2 ) RESTful API
+
+The main difference between both is 
+
+RESTful API uses appropriate HTTP methods for different operation 
+where REST API mainly uses POST method for almost all operation.
+
+Also RESTful is more stateless in nature of REST and resource focused.
+
+Ex. of REST API : 
+
+i ) Twitter API : https://developer.x.com/en/docs
+ii ) Facebook Graph API : https://developers.facebook.com/docs/graph-api
+iii ) Instagram API : https://developers.facebook.com/docs/instagram-platform/instagram-api-with-facebook-login
+
+---------------------------------------------------------------------------------

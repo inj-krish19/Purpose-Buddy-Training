@@ -14,5 +14,8 @@ class DemoController extends Controller
         return view("hello");
     }
 
+    public function guzzle(){
+        return view("guzzle");
+    }
 
 }

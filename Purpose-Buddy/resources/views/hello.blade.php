@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Hello World using DemoController at index route</h1>
+    <button onclick="location.href='guzzle'">Go To Guzzle Client Demo</button>
 </body>
 </html>
