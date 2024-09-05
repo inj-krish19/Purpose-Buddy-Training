@@ -18,4 +18,8 @@ class DemoController extends Controller
         return view("guzzle");
     }
 
+    public function curl(){
+        return view("curl");
+    }
+
 }

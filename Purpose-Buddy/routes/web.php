@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,4 @@ use App\Http\Controllers\DemoController;
 
 Route::get('/', [DemoController::class , 'index'] );
 Route::get('/guzzle', [DemoController::class , 'guzzle'] );
+Route::get('/curl', [DemoController::class , 'curl'] );
