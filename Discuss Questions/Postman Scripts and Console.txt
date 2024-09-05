@@ -1,0 +1,20 @@
+Q:  Write Basic Scripts in Postman to automate testing
+
+Ans. 
+Live Demo : https://www.postman.com/telecoms-engineer-1159960/purpose-buddy/collection/xue48du/sample-demo-collection?action=share&creator=38145925
+
+1) Go on Request
+
+2) Tap on Scripts 
+
+3) Write Scripts Before Script at Pre-request and After Script at Post-request
+
+4) Tap on Send 
+
+5) At Bottom Left Side Tap On Concole Option
+
+6) Watch That Scripts Output on That Console
+
+7) If both Scripts giving output then watch Body for Output.
+
+------------------------------------------------------------------------------------------------------

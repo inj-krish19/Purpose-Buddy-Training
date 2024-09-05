@@ -1,0 +1,40 @@
+Q: Create a Postman Collection for the Laravel with variables
+
+Ans. 
+Live Demo : https://www.postman.com/telecoms-engineer-1159960/purpose-buddy/collection/xue48du/sample-demo-collection?action=share&creator=38145925
+
+1) Creating Workspace :
+
+i) Go To Homepage
+
+ii) Tap on Workspace 
+
+iii) Create New Workspace and add appropriate name
+
+iv) Go In that Workspace.
+
+***********************************
+
+2) Creating Collection :
+
+i) Tap on + icon 
+
+ii) Add Name Of Collection 
+
+iii) Go To Collection
+
+*************************************
+
+3) Creating Variables :
+
+i) Tap on Collection
+
+ii) Tap on Variables
+
+iii) In that at Variables at key and at Initial and Current Value fill it accordingly
+
+**************************************
+
+After making variables replace those values with Variables for Maintainability.
+
+------------------------------------------------------------------------------------------------------

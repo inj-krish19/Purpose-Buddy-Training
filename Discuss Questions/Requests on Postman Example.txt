@@ -1,0 +1,28 @@
+Q: Performance GET and POST request using Postman on Sample API
+
+Ans .   
+Live Demo : https://www.postman.com/telecoms-engineer-1159960/purpose-buddy/collection/xue48du/sample-demo-collection?action=share&creator=38145925
+
+GET REQUEST
+
+1) Go In Collection. Create New Sample Demo Collection
+
+2) Add Request. Select GET Request 
+
+3) Put Get Request API URL 
+
+4) Tap On Send and Wtach Output on Body in JSON format
+
+POST REQUEST
+
+1) Go In Collection. Create New Sample Demo Collection
+
+2) Add Request. Select POST Request 
+
+3) Put Post Request API URL 
+
+4) Go on Header and Add Variable => Content-Type : application/json
+
+5) Go on params and fill sending fields in key and data in values.
+
+6) Tap On Send and Wtach Output on Body in JSON format
