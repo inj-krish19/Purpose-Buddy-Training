@@ -1,0 +1,16 @@
+Q: Create a simple Laravel controller with basic routes (e.g., a welcome page).
+
+Ans. 
+
+1) Write Below Command and Make Controller
+php artisan make:controller WelcomeController
+
+2) Define Method and Return The Page Name That You Want To Show
+( Ex. hello.blade.php  => return view('hello'); )
+
+3) Make a Route at '/' and Give That Function Name
+
+4) Write Accordingly Content in that view file
+
+5) Run Server and Watch Is It Working or Not using below Command
+php artisan serve

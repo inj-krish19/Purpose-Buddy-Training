@@ -1,0 +1,25 @@
+Q: Install Laravel, create a basic project, and explore the folder structure.
+
+Ans. 
+
+1) Install PHP and Server As Per Requirements
+( Ex. PHP v8.2 is Recommented )
+
+2) Search Laravel Composer Install It and Setup It Accordingly
+
+3) Run This Command and Install Laravel Installer :
+composer global require laravel/installer
+
+4) Run This Command and Create a New Project 
+laravel new <project-name>
+
+                or                  
+
+4) Run This Command and Create a New Project
+composer create-project --prefer-dist laravel/laravel <project-name>
+
+5) Go on That Project Location
+cd <project-name>
+
+6) Run Server and Watch Is It Working or Not using below Command
+php artisan serve
