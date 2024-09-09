@@ -33,7 +33,7 @@
             <input type="text" name="price" id="price" value="{{$product->price}}"><br><br>
             <label for="description">Enter Product Description : </label>
             <input type="text" name="description" id="description" value="{{$product->description}}"><br><br>
-            <input type="submit" value="Create" name="create" >
+            <input type="submit" value="Update" name="update" >
         </form>
     </div>
 </body>

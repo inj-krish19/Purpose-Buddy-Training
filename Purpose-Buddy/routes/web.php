@@ -30,7 +30,7 @@ Route::post('/product',[ProductController::class,'store'])->name('product.store'
 Route::get('/product/show',[ProductController::class,'show'])->name('product.show');
 
 Route::get('/product/{product}/update',[ProductController::class,'update'])->name('product.update');
-Route::put('/product/{product}/edit',[ProductController::class,'edit'])->name('product.edit');
+Route::post('/product/{product}/edit',[ProductController::class,'edit'])->name('product.edit');
 
 Route::get('/product/{product}/delete',[ProductController::class,'delete'])->name('product.delete');
-Route::put('/product/{product}/remove',[ProductController::class,'remove'])->name('product.remove');
+Route::post('/product/{product}/remove',[ProductController::class,'remove'])->name('product.remove');

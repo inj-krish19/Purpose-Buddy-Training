@@ -9,7 +9,7 @@
     <h1>Do You Really Want To Delete It ??</h1>
     <form action="{{route('product.remove', ['product' => $product] )}}" method="post"> 
         @csrf
-        @method('put')
+        @method('post')
         <button type="submit">Delete</button> 
     </form>
 </body>

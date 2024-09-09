@@ -1,0 +1,7 @@
+[2024-09-09 05:06:07] local.INFO: Adding Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"post","name":"IPhone","qty":"15","price":"150000.00","description":"IPhone 15","create":"Create"}  
+[2024-09-09 05:08:46] local.INFO: Updating Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"post","name":"IPhone","qty":"1000","price":"200000.00","description":"Brand New IPhone 16","create":"Create"}  
+[2024-09-09 05:11:11] local.INFO: Adding Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"post","name":"IPhone 16","qty":"1000","price":"200000.00","description":"Brand New IPhone 16","create":"Create"}  
+[2024-09-09 05:11:33] local.INFO: Updating Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"post","name":"IPhone 16","qty":"1000","price":"200000.00","description":"Brand New IPhone 16 with new Features","update":"Update"}  
+[2024-09-09 05:12:06] local.INFO: Deleting Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"put"}  
+[2024-09-09 05:12:58] local.INFO: Adding Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"post","name":"IPhone 16","qty":"1000","price":"200000.00","description":"Brand New IPhone 16","create":"Create"}  
+[2024-09-09 05:13:03] local.INFO: Deleting Product : {"_token":"81gy2VCPyw0HM0ishjyzhBIwjJSHWgCwysf43O9J","_method":"post"}  

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
@@ -28,6 +29,7 @@ class ProductController extends Controller
         );
 
         $newProduct = Product::create($data);
+        Log::channel('product')->info('Adding Product : ' . json_encode( $request->all() ) );
 
         return redirect(route('product.show'));
 
@@ -56,6 +58,7 @@ class ProductController extends Controller
         );
 
         $product->update($data);
+        Log::channel('product')->info('Updating Product : ' . json_encode( $request->all() ) );
 
         return redirect(route('product.show'))->with('success' ,'Product Update Successfully');
     }
@@ -64,8 +67,9 @@ class ProductController extends Controller
         return view('product.delete', ['product' => $product ]);
     }
 
-    public function remove( Product $product){
+    public function remove( Product $product, Request $request ){
         $product->delete();
+        Log::channel('product')->info('Deleting Product : ' . json_encode( $request->all() ) );
         return redirect(route('product.show'))->with('success' ,'Product Deleted Successfully');
     }
 
