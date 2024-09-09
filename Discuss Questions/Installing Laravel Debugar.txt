@@ -1,0 +1,15 @@
+Q: Installing Debugbar
+Ans.
+
+1) Run This Command 
+composer require barryvdh/laravel-debugbar --dev
+
+2) Go on config/app.php
+
+3) Find providers array
+
+4) At Top Add This Line
+Line : 
+Barryvdh\Debugbar\ServiceProvider::class
+
+----------------------------------------------------------

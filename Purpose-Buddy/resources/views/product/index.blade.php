@@ -7,5 +7,9 @@
 </head>
 <body>
     <h1>Product</h1>
+    <div class="container">
+        <button onclick="location.href='product/create'">Create a Product</button>
+        <button onclick="location.href='product/show'">Watch Products</button>
+    </div>
 </body>
 </html>
