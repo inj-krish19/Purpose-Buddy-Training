@@ -9,7 +9,15 @@ use Barryvdh\Debugbar\Facades\Debugbar;
 
 class ProductController extends Controller
 {
-    //
+    
+    
+    
+    
+    // CRUD Functions
+
+
+
+
 
     public function index(){
         Debugbar::info('I am at Product Page');
@@ -94,11 +102,101 @@ class ProductController extends Controller
     public function remove( Product $product, Request $request ){
         
         $product->delete();
-        Log::channel('product')->info('Deleting Product : ' . json_encode( $request->all() ) );
+        Log::channel('product')->info('Deleting Product : ' . json_encode( $product ) );
 
         Debugbar::errors('Product Deleted');
         return redirect(route('product.show'))->with('success' ,'Product Deleted Successfully');
 
+    }
+
+
+
+
+    /*
+
+        1) ENTITY SHOULD BE VARIABLE
+
+        2) EXPLORE MORE TABLES
+
+    */
+
+    // API Functions
+
+
+
+
+
+
+    public function api_show(){
+        return response()->json([
+            'status' => 200,
+            'response' => 'OK',
+            'products' => Product::all()
+        ]);
+    }
+
+
+    public function api_show_product( Product $prd ){
+        return response()->json([
+            'status' => 200,
+            'response' => 'OK',
+            'products' => $prd
+        ]);
+    }
+
+    public function api_create(Request $request) {
+
+        $data = $request->validate(
+            [
+                'name' => 'required',
+                'qty' => 'required|numeric',
+                'price' => 'required|decimal:0,2',
+                'description' => 'required'
+            ]
+        );
+
+        Log::channel('product')->info('Using API => Adding Product : ' . json_encode( $request->all() ) );
+        $newProduct = Product::create($data);
+
+        return response()->json([
+            'status' => 200,
+            'response' => 'OK',
+            'products' => $request->all()
+        ]);
+
+    }
+
+    public function api_update( Request $request, Product $prd ){
+
+        $data = $request->validate(
+            [
+                'name' => 'required',
+                'qty' => 'required|numeric',
+                'price' => 'required|decimal:0,2',
+                'description' => 'required'
+            ]
+        );
+
+        Log::channel('product')->info('Using API => Updating Product : ' . json_encode( $prd ) );
+        $prd->update($data);
+
+        return response()->json([
+            'status' => 200,
+            'response' => 'OK',
+            'products' => $data
+        ]);
+    }
+
+    public function api_delete( Request $request, Product $prd ){
+        $data = $prd;
+        $prd->delete();
+        Log::channel('product')->info('Using API => Deleting Product : ' . json_encode( $prd ) );
+        return response()->json([
+            'status' => 200,
+            'response' => 'OK',
+            'message' => 'Product ' . $data->id . ' Deleted Successfully',
+            'products' => $data
+        ]);
     }
 
 }
