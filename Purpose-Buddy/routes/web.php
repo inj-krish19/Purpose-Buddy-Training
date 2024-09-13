@@ -64,3 +64,20 @@ Route::put('/api/product/update/{prd}',[ProductController::class,'api_update'])-
 
 // Delete Existing Data Route
 Route::delete('/api/product/delete/{prd}',[ProductController::class,'api_delete'])->name('api.delete');
+
+// USER API Routes 
+
+// Get All Data Route
+Route::get('/api/user/',[ProductController::class,'api_show'])->name('api.users');
+
+// Get Specific Data Route
+Route::get('/api/user/{prd}',[ProductController::class,'api_show_user']);
+
+// Create New Data Route
+Route::post('/api/user/create',[ProductController::class,'api_create']);
+
+// Update Existing Data Route
+Route::put('/api/user/update/{id}',[ProductController::class,'api_update']);
+
+// Delete Existing Data Route
+Route::delete('/api/user/delete/{id}',[ProductController::class,'api_delete']);
