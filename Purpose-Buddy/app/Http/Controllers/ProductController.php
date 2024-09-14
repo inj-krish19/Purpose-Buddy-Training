@@ -168,17 +168,48 @@ class ProductController extends Controller
 
     public function api_update( Request $request, Product $prd ){
 
-        $data = $request->validate(
-            [
-                'name' => 'required',
-                'qty' => 'required|numeric',
-                'price' => 'required|decimal:0,2',
-                'description' => 'required'
-            ]
-        );
+        // $data = $request->validate(
+        //     [
+        //         'name' => 'required',
+        //         'qty' => 'required|numeric',
+        //         'price' => 'required|decimal:0,2',
+        //         'description' => 'required'
+        //     ]
+        // );
 
+        $data = $prd;
+
+        if(
+            !isset( $request->name )    &&
+            !isset( $request->price )    &&
+            !isset( $request->description )    &&
+            !isset( $request->qty )    
+        ){
+            return response()->json([
+                'response' => 'parameters reuired',
+            ]);
+        }
+
+        if( isset($request->name) ){
+            $data->name = $request->name;
+        }
+
+        if( isset($request->qty) ){
+            $data->qty = $request->qty;
+        }
+
+        if( isset($request->price) ){
+            $data->price = $request->price;
+        }
+
+        if( isset($request->description) ){
+            $data->description = $request->description;
+        }
+
+
+        error_log($data);
         Log::channel('product')->info('Using API => Updating Product : ' . json_encode( $prd ) );
-        $prd->update($data);
+        $prd->update([$data]);
 
         return response()->json([
             'status' => 200,
@@ -200,3 +231,6 @@ class ProductController extends Controller
     }
 
 }
+
+
+// Service

@@ -50,22 +50,26 @@ Route::post('/product/{product}/remove',[ProductController::class,'remove'])->na
 
 // PRODUCT API Routes 
 
+$productRoute = '/api/product';
+
 // Get All Data Route
-Route::get('/api/product/',[ProductController::class,'api_show'])->name('api.products');
+Route::get($productRoute . '/',[ProductController::class,'api_show'])->name('api.products');
 
 // Get Specific Data Route
-Route::get('/api/product/{prd}',[ProductController::class,'api_show_product'])->name('api.product');
+Route::get($productRoute . '/{prd}',[ProductController::class,'api_show_product'])->name('api.product');
 
 // Create New Data Route
-Route::post('/api/product/create',[ProductController::class,'api_create'])->name('api.create');
+Route::post($productRoute . '/create',[ProductController::class,'api_create'])->name('api.create');
 
 // Update Existing Data Route
-Route::put('/api/product/update/{prd}',[ProductController::class,'api_update'])->name('api.update');
+Route::put($productRoute . '/update/{prd}',[ProductController::class,'api_update'])->name('api.update');
 
 // Delete Existing Data Route
-Route::delete('/api/product/delete/{prd}',[ProductController::class,'api_delete'])->name('api.delete');
+Route::delete($productRoute . '/delete/{prd}',[ProductController::class,'api_delete'])->name('api.delete');
 
 // USER API Routes 
+
+// $userRoute = 
 
 // Get All Data Route
 Route::get('/api/user/',[ProductController::class,'api_show'])->name('api.users');
